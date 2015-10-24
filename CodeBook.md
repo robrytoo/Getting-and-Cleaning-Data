@@ -15,7 +15,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ## VARIABLES
 
-The output file **AverageFeature.txt** contains a data frame of 180 rows by 88 columns.  Each of the column from the source dataset that represents a mean or standard deviation of a training/testing set variable (i.e. contains the strings *STD* or *mean* (case insensitive)) is ofrepresent the activity and subject for the row of variables.  
+The output file **AverageFeature.txt** contains a data frame of 180 rows by 88 columns.  The output file reports the average of the column feature for each subject and activity (180=30*6 rows.)  Only feature columns from the source dataset that represents a mean or standard deviation of a training/testing set variable (i.e. contains the strings *STD* or *mean* (case insensitive)) are selected for evaluation.  There are 86 feature columns, with the addition of the activity and subjectID columns this accounts for the 88 total columns in the outputfile. 
 
 The list of variables is in the header of the file **AverageFeature.txt**.   The variable names are the same as the selected features from the training and testing  dataset (see DATA below) after removal of extra pairs of parentheses.  They values are the average of all observations of a given activity for a given subject.  See the web site for http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones and  its README file for a description of the feature variables.
 
@@ -33,7 +33,7 @@ The files
 - UCI HAR Dataset/train/subject_train.txt (7352 coded subjects (categorical values 1 to 30))
 - UCI HAR Dataset/test/subject_test.txt (2947 coded subjects (categorical values 1 to 30)) 
 
-indicate the subject who generated the data.  Thirty total subject participated in data collection and were randomly assigned to training or testing, but not both.  There are 21 subjects in the training set and 9 in the testing set.
+indicate the subject who generated the data.  Thirty total subjects participated in data collection and were randomly assigned to training or testing, but not both.  There are 21 subjects in the training set and 9 in the testing set.
 
 The files 
 - UCI HAR Dataset/train/y_train.txt (7352 coded activities (categorical values 1 to 6)) 	

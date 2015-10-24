@@ -1,6 +1,6 @@
 # Course Project - Getting and Cleaning Data
 
-This project downloads data from the UCI Machine Learning Repository, assembles the data into a data frame, extracts a subset of the features from the dataset, and calculates an average of the extracted feature for each activity for each subject.  A complete description of the input data and output variables in **CodeBook.md**.
+This project downloads data from the UCI Machine Learning Repository, assembles the data into a data frame, extracts a subset of the features from the dataset, and calculates an average of the extracted feature for each activity for each subject.  A complete description of the input data and output variables is in **CodeBook.md**.
 
 The R script **run_analysis.R** accomplishes this in the following steps, detailed below.
 - Download data and read data files.
@@ -27,7 +27,7 @@ The files
 - UCI HAR Dataset/train/subject_train.txt (7352 coded subjects (categorical values 1 to 30))
 - UCI HAR Dataset/test/subject_test.txt (2947 coded subjects (categorical values 1 to 30)) 
 
-indicate the subject who generated the data.  Thirty total subject participated in data collection and were randomly assigned to training or testing, but not both.  There are 21 subjects in the training set and 9 in the testing set.
+indicate the subject who generated the data.  Thirty total subjects participated in data collection and were randomly assigned to training or testing, but not both.  There are 21 subjects in the training set and 9 in the testing set.
 
 The files 
 - UCI HAR Dataset/train/y_train.txt (7352 coded activities (categorical values 1 to 6)) 	
@@ -59,4 +59,4 @@ Activities are changed from a numerical representation to meaningful character n
 
 ## Write out file with the summary data frame
 
-Final tidy data frame is written to file **AverageFeature.txt** with prescribed function **write_table** with parameter **row.name** set to FALSE. 
+The final tidy data frame is written to file **AverageFeature.txt** using the prescribed function **write_table** with parameter **row.name** set to FALSE. 
