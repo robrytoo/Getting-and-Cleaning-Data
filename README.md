@@ -1,4 +1,4 @@
-# Course Project Ð Getting and Cleaning Data
+# Course Project - Getting and Cleaning Data
 
 This project downloads data from the UCI Machine Learning Repository, assembles the data into a data frame, extracts a subset of the features from the dataset, and calculates an average of the extracted feature for each activity for each subject.  A complete description of the input data and output variables in **CodeBook.md**.
 
